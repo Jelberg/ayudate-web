@@ -3,11 +3,13 @@ import { loginApi } from "../../services/auth/loginUserApi.js";
 import { Notification } from "../notification/Notification.js";
 import { getAccessTokenApi } from "../../services/auth/getAccessTokenApi.js";
 import { ToastContainer } from "react-toastify";
+import { useLocation } from "wouter";
 import useAuth from "../../hooks/useAuth.js";
 
 export default function LoginForm() {
   const [pass, setPass] = useState("");
   const [email, setEmail] = useState("");
+  const [, setLocation] = useLocation();
   const { token } = useAuth();
 
   const handleInputEmail = (event) => {
@@ -16,6 +18,10 @@ export default function LoginForm() {
 
   const handleInputPass = (event) => {
     setPass(event.target.value);
+  };
+
+  const goToPage = () => {
+    setLocation("/signup");
   };
 
   const userLogin = async () => {
@@ -58,9 +64,9 @@ export default function LoginForm() {
       </div>
       <div className="grid place-content-center text-white  text-center">
         <h1> - O - </h1>
-        <a className="font-bold text-lg" href="">
+        <label className="font-bold text-lg" onClick={goToPage}>
           REGISTRARSE
-        </a>
+        </label>
       </div>
       <ToastContainer />
     </div>

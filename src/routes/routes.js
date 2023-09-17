@@ -1,15 +1,21 @@
-import React from "react";
-import { Route, Link, Router } from "wouter";
+import React, { useEffect } from "react";
+import { Route, Router, useLocation, Redirect } from "wouter";
 import Home from "../pages/homePage/Home.js";
 import Login from "../pages/loginPage/Login.js";
+import SignUp from "../pages/signUpPage/SignUp.js";
 import useAuth from "../hooks/useAuth.js";
 
 const Routes = () => {
   const { auth } = useAuth();
+  const [location, setLocation] = useLocation();
+
+  console.log(location);
+
   return (
     <Router>
-      <Route exact path="/login" component={Login} />
-      <Route path="/" component={Home} />
+      <Route path="/home" component={Home} />
+      <Route path="/login" component={Login} />
+      <Route path="/signup" component={SignUp} />
     </Router>
   );
 };
