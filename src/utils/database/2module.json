@@ -1,0 +1,262 @@
+[
+  {
+    "id": 1,
+    "topic": 1,
+    "question": "¿La salud mental se basa en sentirse siempre alegre?",
+    "options": [
+      {
+        "id": 1,
+        "answer": "Falso",
+        "isTrue": true
+      },
+      {
+        "id": 2,
+        "answer": "Verdadero",
+        "isTrue": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "topic": 1,
+    "question": "¿El alegrarse por un regalo muy anhelado es un sentimiento de placer?",
+    "options": [
+      {
+        "id": 2,
+        "answer": "Falso",
+        "isTrue": false
+      },
+      {
+        "id": 1,
+        "answer": "Verdadero",
+        "isTrue": true
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "topic": 1,
+    "question": "Tomar decisiones bien pensadas es parte del elemento mental.",
+    "options": [
+      {
+        "id": 2,
+        "answer": "Verdadero",
+        "isTrue": true
+      },
+      {
+        "id": 1,
+        "answer": "Falso",
+        "isTrue": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "topic": 1,
+    "question": "El bienestar físico puede afectar en nuestra salud mental, pero no es lo único que afecta a la salud mental.",
+    "options": [
+      {
+        "id": 1,
+        "answer": "Falso",
+        "isTrue": false
+      },
+      {
+        "id": 2,
+        "answer": "Verdadero",
+        "isTrue": true
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "topic": 2,
+    "question": "El estar siempre molesto con los demás es un sentimiento de...",
+    "options": [
+      {
+        "id": 3,
+        "answer": "Alegría",
+        "isTrue": false
+      },
+      {
+        "id": 1,
+        "answer": "Ira",
+        "isTrue": true
+      },
+      {
+        "id": 2,
+        "answer": "Miedo",
+        "isTrue": false
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "topic": 2,
+    "question": "Cuando nos sentimos tristes estamos decaídos.",
+    "options": [
+      {
+        "id": 2,
+        "answer": "Falso",
+        "isTrue": false
+      },
+      {
+        "id": 1,
+        "answer": "Verdadero",
+        "isTrue": true
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "topic": 2,
+    "question": "Una reacción de sorpresa no siempre es por algo que nos gusta.",
+    "options": [
+      {
+        "id": 1,
+        "answer": "Verdadero",
+        "isTrue": true
+      },
+      {
+        "id": 2,
+        "answer": "Falso",
+        "isTrue": false
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "topic": 2,
+    "question": "Sentirse excluido es una característica del rechazo.",
+    "options": [
+      {
+        "id": 1,
+        "answer": "Verdadero",
+        "isTrue": true
+      },
+      {
+        "id": 2,
+        "answer": "Falso",
+        "isTrue": false
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "topic": 2,
+    "question": "La alegría es peligrosa porque no nos permite ver el peligro.",
+    "options": [
+      {
+        "id": 1,
+        "answer": "Verdadero",
+        "isTrue": false
+      },
+      {
+        "id": 2,
+        "answer": "Falso",
+        "isTrue": true
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "topic": 2,
+    "question": "La tristeza nos ayuda a reconocer lo que perdimos, a querer mejorar y a buscar sanar.",
+    "options": [
+      {
+        "id": 2,
+        "answer": "Falso",
+        "isTrue": true
+      },
+      {
+        "id": 1,
+        "answer": "Verdadero",
+        "isTrue": false
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "topic": 3,
+    "question": "Sentirte insatisfecho contigo mismo corresponde a tener una autoaceptación baja.",
+    "options": [
+      {
+        "id": 1,
+        "answer": "Verdadero",
+        "isTrue": true
+      },
+      {
+        "id": 2,
+        "answer": "Falso",
+        "isTrue": false
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "topic": 3,
+    "question": "Para ser feliz hay que trabajar en uno mismo.",
+    "options": [
+      {
+        "id": 1,
+        "answer": "Verdadero",
+        "isTrue": true
+      },
+      {
+        "id": 2,
+        "answer": "Falso",
+        "isTrue": false
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "topic": 3,
+    "question": "¿Nuestra felicidad depende de lo que los demás hagan con nuestra vida?",
+    "options": [
+      {
+        "id": 1,
+        "answer": "Verdadero",
+        "isTrue": false
+      },
+      {
+        "id": 2,
+        "answer": "Falso",
+        "isTrue": true
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "topic": 3,
+    "question": "Las personas que se quieren a sí mismas dicen cosas negativas como: eres fea, no te mereces el cariño de las personas.",
+    "options": [
+      {
+        "id": 1,
+        "answer": "Verdadero",
+        "isTrue": false
+      },
+      {
+        "id": 2,
+        "answer": "Falso",
+        "isTrue": true
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "topic": 3,
+    "question": "Las personas que se quieren así, reconocen sus atributos y cuando hacen cosas que no les gustan se tratan con respeto y buscan mejorarlo.",
+    "options": [
+      {
+        "id": 1,
+        "answer": "Verdadero",
+        "isTrue": true
+      },
+      {
+        "id": 2,
+        "answer": "Falso",
+        "isTrue": false
+      }
+    ]
+  }
+]

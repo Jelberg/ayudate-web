@@ -1,0 +1,366 @@
+[
+  {
+    "id": 1,
+    "topic": 1,
+    "question": "Las habilidades sociales son:",
+    "options": [
+      {
+        "id": 1,
+        "answer": "La cantidad de amigos que tenemos",
+        "isTrue": false
+      },
+      {
+        "id": 2,
+        "answer": "La capacidad para desenvolvernos en distintas situaciones sociales.",
+        "isTrue": true
+      },
+      {
+        "id": 4,
+        "answer": "La capacidad de bailar en una fiesta.",
+        "isTrue": false
+      },
+      {
+        "id": 3,
+        "answer": "Poder ser el centro de atención en una reunión.",
+        "isTrue": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "topic": 1,
+    "question": "En la comunicación es importante, tener en cuenta:",
+    "options": [
+      {
+        "id": 1,
+        "answer": "Cómo estás vestido",
+        "isTrue": false
+      },
+      {
+        "id": 2,
+        "answer": "El olor de la boca",
+        "isTrue": false
+      },
+      {
+        "id": 3,
+        "answer": "El tono de voz, la posición del cuerpo, la distancia con el otro y la mirada hacia el hablante.",
+        "isTrue": true
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "topic": 1,
+    "question": "Si alguien no te está escuchando activamente puedes:",
+    "options": [
+      {
+        "id": 2,
+        "answer": "Seguir hablando, en algún momento te prestara atención",
+        "isTrue": false
+      },
+      {
+        "id": 3,
+        "answer": "Molestarte, te está faltando el respeto.",
+        "isTrue": false
+      },
+      {
+        "id": 1,
+        "answer": "Preguntarle que le pasa. Decirle si prefieren hablar otro día u ofrecer hablar de otra cosa.",
+        "isTrue": true
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "topic": 1,
+    "question": "La empatía es un don que se tiene de nacimiento:",
+    "options": [
+      {
+        "id": 2,
+        "answer": "Verdadero",
+        "isTrue": false
+      },
+      {
+        "id": 3,
+        "answer": "Falso",
+        "isTrue": true
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "topic": 2,
+    "question": "Lo mejor para comenzar una conversación son preguntas cerradas.",
+    "options": [
+      {
+        "id": 2,
+        "answer": "Falso",
+        "isTrue": true
+      },
+      {
+        "id": 3,
+        "answer": "Verdadero",
+        "isTrue": false
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "topic": 1,
+    "question": "Señala cuál de las respuestas es de escucha activa. Tu compañero de tenis se da un golpe con la raqueta y se queja amargamente. Tú le respondes:",
+    "options": [
+      {
+        "id": 2,
+        "answer": "Es sólo un pequeño golpe",
+        "isTrue": false
+      },
+      {
+        "id": 3,
+        "answer": "¿Te duele mucho?",
+        "isTrue": true
+      },
+      {
+        "id": 1,
+        "answer": "Tampoco es para tanto",
+        "isTrue": true
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "topic": 2,
+    "question": "Al comenzar una conversación es bueno evitar realizar preguntas demasiado íntimas",
+    "options": [
+      {
+        "id": 2,
+        "answer": "Falso",
+        "isTrue": false
+      },
+      {
+        "id": 3,
+        "answer": "Verdadero",
+        "isTrue": true
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "topic": 2,
+    "question": "Estás en una conversación, que se silencia. ¿Cuál es la mejor opción?",
+    "options": [
+      {
+        "id": 3,
+        "answer": "Te pones ansioso y decides irte.",
+        "isTrue": false
+      },
+      {
+        "id": 2,
+        "answer": "Piensas que la otra persona está molesta",
+        "isTrue": false
+      },
+      {
+        "id": 1,
+        "answer": "Piensas que el silencio es parte de una conversación, y le dices: Nos quedamos callados, ¿te molestó algo que te dije?",
+        "isTrue": true
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "topic": 3,
+    "question": "Ayer te molestaste, y le gritaste a una amiga para que se fuera de tu casa. Selecciona cuál es la mejor respuesta.",
+    "options": [
+      {
+        "id": 2,
+        "answer": "Prefieres no decirle nada, no quieres sentirte débil ante ella.",
+        "isTrue": false
+      },
+      {
+        "id": 1,
+        "answer": "La buscas y le dices: amiga, acabo de darme cuenta que tal vez mi comportamiento de antes pudo molestarte, fui un tanto grosera, perdona, estaba un poco ansiosa.",
+        "isTrue": true
+      },
+      {
+        "id": 3,
+        "answer": "La buscas y le dices: amiga, soy la peor persona del mundo. No sirve para nada. Discúlpame. No merezco que me hables.",
+        "isTrue": false
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "topic": 4,
+    "question": "¿Cuál de los siguientes pensamientos, son pensamientos asertivos?",
+    "options": [
+      {
+        "id": 1,
+        "answer": "No debo decirle palabras lindas porque ellos ya saben cuándo han hecho algo bien y notarán lo que pienso.",
+        "isTrue": false
+      },
+      {
+        "id": 2,
+        "answer": "Los demás no pueden leer la mente y conocer lo que pienso. Unas palabras sinceras servirán para comunicarles lo que pienso y siento.",
+        "isTrue": true
+      },
+      {
+        "id": 3,
+        "answer": "Me siento raro haciendo cumplidos.",
+        "isTrue": false
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "topic": 5,
+    "question": "Me encuentro molesto por el ruido que hace un compañero. Identifica cuál es el pensamiento racional.",
+    "options": [
+      {
+        "id": 1,
+        "answer": "El no debería comportarse así. Es un imbécil.",
+        "isTrue": false
+      },
+      {
+        "id": 2,
+        "answer": "Si le digo lo que siento, se molestará y no me hablará más.",
+        "isTrue": false
+      },
+      {
+        "id": 3,
+        "answer": "Me molesta que haga ruido, y es lógico. ¿Cuál es la mejor forma para solicitar que haga silencio?",
+        "isTrue": true
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "topic": 5,
+    "question": "¿Cuándo el otro está molesto, se te acerca y te insulta, que no deberías hacer:",
+    "options": [
+      {
+        "id": 1,
+        "answer": "Darle un tiempo para que se calme, y tú también puedas pensar cuál es la mejor forma de tratar el problema.",
+        "isTrue": false
+      },
+      {
+        "id": 2,
+        "answer": "Ponerlo en su lugar con un solo grito o golpe.",
+        "isTrue": true
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "topic": 6,
+    "question": "Selecciona la respuesta correcta. El pedir un cambio de comportamiento es:",
+    "options": [
+      {
+        "id": 1,
+        "answer": "Un derecho asertivo",
+        "isTrue": true
+      },
+      {
+        "id": 2,
+        "answer": "Un deber del otro",
+        "isTrue": false
+      },
+      {
+        "id": 3,
+        "answer": "Una exigencia",
+        "isTrue": false
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "topic": 6,
+    "question": "Cuando queremos pedir algo, ¿cuál sería la recomendación?",
+    "options": [
+      {
+        "id": 1,
+        "answer": "Repetir y clarificar lo que pedimos si vemos que hay algún malentendido.",
+        "isTrue": false
+      },
+      {
+        "id": 2,
+        "answer": "Explica claramente lo que quieres",
+        "isTrue": false
+      },
+      {
+        "id": 3,
+        "answer": "Se amable, asertivo, breve y directo",
+        "isTrue": false
+      },
+      {
+        "id": 4,
+        "answer": "Todas las anteriores",
+        "isTrue": true
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "topic": 7,
+    "question": "Estás en una parrillada, el compañero que tienes al lado está fumando, su humo te está molestando. ¿Cuál sería la mejor forma de pedirle un cambio de comportamiento?",
+    "options": [
+      {
+        "id": 1,
+        "answer": "Prefieres no decirle nada, igual las otras cosas te gustan",
+        "isTrue": false
+      },
+      {
+        "id": 2,
+        "answer": "Le dices: El humo del cigarrillo me molesta, ¿podrías por favor apagarlo o mientras te lo fumas hacerlo en otra parte?",
+        "isTrue": true
+      },
+      {
+        "id": 3,
+        "answer": "Le dices: Te vas a morir de cáncer y me vas a matar a mí. ¡Apaga el cigarro!",
+        "isTrue": false
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "topic": 8,
+    "question": "Estás en una reunión y quieres que pruebes un cigarro. A ti no te gusta el cigarro, selecciona la respuesta más asertiva.",
+    "options": [
+      {
+        "id": 1,
+        "answer": "Decides probarlo para que te dejen tranquila.",
+        "isTrue": false
+      },
+      {
+        "id": 2,
+        "answer": "Te molestas y te vas de la reunión.",
+        "isTrue": false
+      },
+      {
+        "id": 3,
+        "answer": "Le dices: No, no me gusta el cigarrillo",
+        "isTrue": true
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "topic": 8,
+    "question": "Tienes varias semanas trabajando muy fuerte y quieres ese fin de semana ver solamente películas en tu casa. Tus amigos te escriben para salir, ¿cuál es la respuesta más asertiva?",
+    "options": [
+      {
+        "id": 1,
+        "answer": "Les dices: Gracias por la invitación, me encanta salir con ustedes, pero este fin de semana quiero quedarme en la casa descansando, podemos cuadrar para otro momento.",
+        "isTrue": true
+      },
+      {
+        "id": 2,
+        "answer": "No le contestas el teléfono para no escucharlos.",
+        "isTrue": false
+      },
+      {
+        "id": 3,
+        "answer": "Sales para no decepcionarlo, a pesar que quieres quedarte en tu casa relajándote.",
+        "isTrue": false
+      }
+    ]
+  }
+]

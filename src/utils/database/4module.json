@@ -1,0 +1,294 @@
+[
+  {
+    "id": 1,
+    "topic": 1,
+    "question": "¿Los TCA pueden pasar desapercibidos?",
+    "options": [
+      {
+        "id": 1,
+        "answer": "False",
+        "isTrue": false
+      },
+      {
+        "id": 2,
+        "answer": "Verdadero",
+        "isTrue": true
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "topic": 1,
+    "question": "El TCA es una enfermedad psicológica.",
+    "options": [
+      {
+        "id": 2,
+        "answer": "Verdadero",
+        "isTrue": true
+      },
+      {
+        "id": 1,
+        "answer": "False",
+        "isTrue": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "topic": 1,
+    "question": "¿Cuáles son los principales trastornos del comportamiento alimentario?",
+    "options": [
+      {
+        "id": 1,
+        "answer": "Vigorexia y Ortorexia",
+        "isTrue": false
+      },
+      {
+        "id": 2,
+        "answer": "Bulimia, Pica y atracón",
+        "isTrue": false
+      },
+      {
+        "id": 3,
+        "answer": "Atracón, Bulimia y Anorexia",
+        "isTrue": true
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "topic": 2,
+    "question": "Uno de los síntomas de los TCA es el miedo a engordar.",
+    "options": [
+      {
+        "id": 1,
+        "answer": "Verdadero",
+        "isTrue": true
+      },
+      {
+        "id": 2,
+        "answer": "Falso",
+        "isTrue": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "topic": 2,
+    "question": "Uno de los síntomas de tener un TCA es la sensación de pérdida de control a la hora de comer.",
+    "options": [
+      {
+        "id": 1,
+        "answer": "Verdadero",
+        "isTrue": true
+      },
+      {
+        "id": 2,
+        "answer": "Falso",
+        "isTrue": false
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "topic": 2,
+    "question": "Las consecuencias de los TCA pueden ser __________ y  ___________.",
+    "options": [
+      {
+        "id": 1,
+        "answer": "Sociales y emocionales",
+        "isTrue": false
+      },
+      {
+        "id": 2,
+        "answer": "Fisicas y psicologicas.",
+        "isTrue": false
+      },
+      {
+        "id": 3,
+        "answer": "Físicas y educativas",
+        "isTrue": false
+      },
+      {
+        "id": 4,
+        "answer": "Todas las anteriores",
+        "isTrue": true
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "topic": 2,
+    "question": "¿Los TCA pueden pasar desapercibidos?",
+    "options": [
+      {
+        "id": 1,
+        "answer": "Verdadero",
+        "isTrue": true
+      },
+      {
+        "id": 2,
+        "answer": "Falso",
+        "isTrue": false
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "topic": 2,
+    "question": "¿Los TCA generan consecuencias físicas?",
+    "options": [
+      {
+        "id": 1,
+        "answer": "Verdadero",
+        "isTrue": true
+      },
+      {
+        "id": 2,
+        "answer": "Falso",
+        "isTrue": false
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "topic": 2,
+    "question": "¿El miedo a comer es una consecuencia de un TCA?",
+    "options": [
+      {
+        "id": 1,
+        "answer": "Verdadero",
+        "isTrue": true
+      },
+      {
+        "id": 2,
+        "answer": "Falso",
+        "isTrue": false
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "topic": 2,
+    "question": "La pérdida de pelo es una consecuencia del TCA",
+    "options": [
+      {
+        "id": 1,
+        "answer": "Verdadero",
+        "isTrue": true
+      },
+      {
+        "id": 2,
+        "answer": "Falso",
+        "isTrue": false
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "topic": 2,
+    "question": "¿Los medicamentos antidepresivos son los únicos tratamientos para recuperarse de los TCA?",
+    "options": [
+      {
+        "id": 1,
+        "answer": "Verdadero",
+        "isTrue": false
+      },
+      {
+        "id": 2,
+        "answer": "Falso",
+        "isTrue": true
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "topic": 2,
+    "question": "¿Las consecuencias de los TCA se relacionan con verse más bonito y estar saludable?",
+    "options": [
+      {
+        "id": 1,
+        "answer": "Verdadero",
+        "isTrue": false
+      },
+      {
+        "id": 2,
+        "answer": "Falso",
+        "isTrue": true
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "topic": 3,
+    "question": "Cuando detectas que tú u otra persona padece un TCA, debes en primer lugar consultar con un ___________ o  ____________.",
+    "options": [
+      {
+        "id": 1,
+        "answer": "Adulto o especialista",
+        "isTrue": true
+      },
+      {
+        "id": 2,
+        "answer": "Otro amigo y maestro",
+        "isTrue": false
+      },
+      {
+        "id": 3,
+        "answer": "Internet o libros",
+        "isTrue": false
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "topic": 3,
+    "question": "¿Si un amigo sufre un TCA debes ignorarlo y no ayudarlo?",
+    "options": [
+      {
+        "id": 1,
+        "answer": "Verdadero",
+        "isTrue": false
+      },
+      {
+        "id": 2,
+        "answer": "Falso",
+        "isTrue": true
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "topic": 3,
+    "question": "¿Para tratar los TCA debes dejar de comer y no contarle a nadie?",
+    "options": [
+      {
+        "id": 1,
+        "answer": "Verdadero",
+        "isTrue": false
+      },
+      {
+        "id": 2,
+        "answer": "Falso",
+        "isTrue": true
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "topic": 3,
+    "question": "Para recuperarse de un TCA se requiere el apoyo nutricional y psicológico.",
+    "options": [
+      {
+        "id": 1,
+        "answer": "Verdadero",
+        "isTrue": true
+      },
+      {
+        "id": 2,
+        "answer": "Falso",
+        "isTrue": false
+      }
+    ]
+  }
+]

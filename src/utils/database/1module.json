@@ -1,0 +1,329 @@
+[
+  {
+    "id": 1,
+    "topic": 1,
+    "question": "¿Para qué sirve alimentarse?",
+    "options": [
+      {
+        "id": 1,
+        "answer": "Para engordar",
+        "isTrue": false
+      },
+      {
+        "id": 2,
+        "answer": "Para protegernos contra las enfermedades, desarrollarnos adecuadamente y tener calidad de vida.",
+        "isTrue": true
+      },
+      {
+        "id": 3,
+        "answer": "Para no sentir hambre",
+        "isTrue": false
+      },
+      {
+        "id": 4,
+        "answer": "No sé",
+        "isTrue": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "topic": 1,
+    "question": "¿La alimentación y la nutrición son lo mismo?",
+    "options": [
+      {
+        "id": 1,
+        "answer": "Sí",
+        "isTrue": false
+      },
+      {
+        "id": 2,
+        "answer": "No",
+        "isTrue": true
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "topic": 1,
+    "question": "¿Cuáles son los macronutrientes?",
+    "options": [
+      {
+        "id": 1,
+        "answer": "Vegetales, granos y carnes",
+        "isTrue": false
+      },
+      {
+        "id": 2,
+        "answer": "Carbohidratos, Proteínas y Grasas",
+        "isTrue": true
+      },
+      {
+        "id": 3,
+        "answer": "Leche, harinas, carnes y frutas",
+        "isTrue": false
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "topic": 2,
+    "question": "¿Cuántos grupos de alimentos existen en Venezuela?",
+    "options": [
+      {
+        "id": 1,
+        "answer": "3",
+        "isTrue": false
+      },
+      {
+        "id": 2,
+        "answer": "8",
+        "isTrue": false
+      },
+      {
+        "id": 3,
+        "answer": "5",
+        "isTrue": true
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "topic": 2,
+    "question": "El grupo de la azúcar, la miel y el papelón, es un grupo opcional en nuestra dieta alimenticia.",
+    "options": [
+      {
+        "id": 1,
+        "answer": "Verdadero",
+        "isTrue": true
+      },
+      {
+        "id": 2,
+        "answer": "Falso",
+        "isTrue": false
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "topic": 2,
+    "question": "¿Qué tipos de alimentos debemos comer menos?",
+    "options": [
+      {
+        "id": 1,
+        "answer": "Carne, pescado y pollo",
+        "isTrue": false
+      },
+      {
+        "id": 2,
+        "answer": "Huevo",
+        "isTrue": false
+      },
+      {
+        "id": 3,
+        "answer": "Pan, papas y arepas",
+        "isTrue": false
+      },
+      {
+        "id": 4,
+        "answer": "Dulces, refrescos y frituras",
+        "isTrue": true
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "topic": 2,
+    "question": "A la semana hay que comer:",
+    "options": [
+      {
+        "id": 1,
+        "answer": "Carne roja toda las semana",
+        "isTrue": false
+      },
+      {
+        "id": 2,
+        "answer": "Proteína, Carbohidratos y Grasas",
+        "isTrue": true
+      },
+      {
+        "id": 3,
+        "answer": "Consumir más proteínas que carbohidratos",
+        "isTrue": false
+      },
+      {
+        "id": 4,
+        "answer": "No sé",
+        "isTrue": false
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "topic": 3,
+    "question": "¿Cuántas comidas deben hacer al día?",
+    "options": [
+      {
+        "id": 1,
+        "answer": "Solo 3 comidas",
+        "isTrue": false
+      },
+      {
+        "id": 2,
+        "answer": "De 3 a 5 comidas",
+        "isTrue": true
+      },
+      {
+        "id": 3,
+        "answer": "6 comidas",
+        "isTrue": false
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "topic": 3,
+    "question": "¿El plato ideal debemos dividirlo en…?",
+    "options": [
+      {
+        "id": 1,
+        "answer": "3 partes",
+        "isTrue": true
+      },
+      {
+        "id": 2,
+        "answer": "5 partes",
+        "isTrue": false
+      },
+      {
+        "id": 3,
+        "answer": "2 partes",
+        "isTrue": false
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "topic": 4,
+    "question": "¿Los carbohidratos engordan y son dañinos para la salud?",
+    "options": [
+      {
+        "id": 1,
+        "answer": "Sí, se deben dejar de comer para bajar de peso",
+        "isTrue": false
+      },
+      {
+        "id": 2,
+        "answer": "No, los carbohidratos son muy importantes para nuestra alimentación porque nos aportan energía y son los que más tenemos que consumir.",
+        "isTrue": true
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "topic": 4,
+    "question": "¿Cuál de los siguientes alimentos contienen grasas adecuadas y saludables?",
+    "options": [
+      {
+        "id": 1,
+        "answer": "Papa y cambur",
+        "isTrue": false
+      },
+      {
+        "id": 2,
+        "answer": "Brócoli y galletas",
+        "isTrue": false
+      },
+      {
+        "id": 3,
+        "answer": "Aguacate y aceite de oliva",
+        "isTrue": true
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "topic": 4,
+    "question": "Se deben saltar comidas para bajar de peso.",
+    "options": [
+      {
+        "id": 1,
+        "answer": "Verdadero",
+        "isTrue": false
+      },
+      {
+        "id": 2,
+        "answer": "Falso",
+        "isTrue": true
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "topic": 4,
+    "question": "Los huevo  tienen muchos nutrientes y vitaminas, como la vitamina A.",
+    "options": [
+      {
+        "id": 1,
+        "answer": "Verdadero",
+        "isTrue": true
+      },
+      {
+        "id": 2,
+        "answer": "Falso",
+        "isTrue": false
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "topic": 5,
+    "question": "Si no recuerdo lo que comí ¿tengo una alimentación consciente?",
+    "options": [
+      {
+        "id": 1,
+        "answer": "Sí",
+        "isTrue": false
+      },
+      {
+        "id": 2,
+        "answer": "No",
+        "isTrue": true
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "topic": 5,
+    "question": "Sí como viendo televisión ¿tengo una alimentación consciente?",
+    "options": [
+      {
+        "id": 1,
+        "answer": "Sí",
+        "isTrue": false
+      },
+      {
+        "id": 2,
+        "answer": "No",
+        "isTrue": true
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "topic": 5,
+    "question": "Cuando como consciente me doy cuenta que me siento satisfecho",
+    "options": [
+      {
+        "id": 1,
+        "answer": "Sí",
+        "isTrue": true
+      },
+      {
+        "id": 2,
+        "answer": "No",
+        "isTrue": false
+      }
+    ]
+  }
+]

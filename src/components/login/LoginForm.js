@@ -1,64 +1,132 @@
-import { useState } from "react";
-import { loginApi } from "../../services/auth/loginUserApi.js";
-import { Notification } from "../notification/Notification.js";
-import { getAccessTokenApi } from "../../services/auth/getAccessTokenApi.js";
-import { ToastContainer } from "react-toastify";
-import { useLocation } from "wouter";
-import useAuth from "../../hooks/useAuth.js";
+import {useState} from 'react';
+import {Notification} from '../notification/Notification.js';
+import {ToastContainer} from 'react-toastify';
+import {loginApi} from '../../services/api/user.js';
+import {useFormik} from 'formik';
+import {useLocation} from 'wouter';
+import {useUserContext} from '../../contexts/UserContext.js';
+import useAuth from '../../hooks/useAuth.js';
 
 export default function LoginForm() {
-  const [pass, setPass] = useState("");
-  const [email, setEmail] = useState("");
+  const [pass, setPass] = useState('');
+  const [email, setEmail] = useState('');
   const [, setLocation] = useLocation();
-  const { token } = useAuth();
+  const [messageEmail, setMessageEmail] = useState('');
+  const [messagePwsd, setMessagePwsd] = useState('');
+  const {login} = useUserContext();
+  const {token} = useAuth();
 
-  const handleInputEmail = (event) => {
-    setEmail(event.target.value);
+  const handleInputEmail = event => {
+    let text = event.target.value;
+    if (text.length < 5) {
+      setMessageEmail({
+        error: 'Minimo 5 caracteres',
+      });
+    } else if (!/\S+@\S+\.\S+/.test(text)) {
+      setMessageEmail({
+        error: 'Ingrese formato de correo válido',
+      });
+    } else {
+      setMessageEmail({text, error: ''});
+    }
+    formik.setFieldValue('email', text);
+    setEmail(text);
   };
 
-  const handleInputPass = (event) => {
-    setPass(event.target.value);
+  const handleInputPass = event => {
+    let text = event.target.value;
+    if (text.length < 5) {
+      setMessagePwsd({
+        error: 'Minimo 5 caracteres',
+      });
+    } else if (!/^[a-zA-Z0-9]+$/.test(text)) {
+      setMessagePwsd({
+        error: 'Debe tener caracteres alfanúmericos',
+      });
+    } else {
+      setMessagePwsd({text, error: ''});
+    }
+    formik.setFieldValue('password', text);
+    setPass(text);
   };
 
   const goToPage = () => {
-    setLocation("/signup");
+    setLocation('/signup');
   };
 
-  const userLogin = async () => {
-    const res = await loginApi(email, pass);
-    if (res) {
-      await Notification("Inicio de sesion correcto 😘", "success");
-      await getAccessTokenApi().then((accessToken) => {
-        token(accessToken);
-      });
-    } else await Notification("Datos Errones");
+  const goToHome = () => {
+    setLocation('/home');
   };
+
+  const formik = useFormik({
+    initialValues: initialValues(),
+    validateOnChange: false,
+    onSubmit: async formValue => {
+      const {email, password} = formValue;
+      if (messageEmail.error === '' && messagePwsd.error === '') {
+        if (email && password) {
+          await loginApi(email, password).then(res => {
+            console.log('holaaa');
+            console.log(res.data);
+            if (Object.keys(res).length === 0)
+              Notification('Usuario o contrasena no existen', 'error');
+            else {
+              login(res.data);
+              goToHome();
+            }
+          });
+        } else {
+          Notification('Existen campos vacios', 'warning');
+        }
+      } else {
+        Notification(
+          'Los datos que ingreso no cumplen con los parametros, por favor revise los campos',
+          'error',
+        );
+      }
+    },
+  });
+
+  function initialValues() {
+    return {
+      email: '',
+      password: '',
+    };
+  }
 
   return (
-    <div className="grid h-full w-full rounded-md border-2 border-white p-12 grid-cols-1 place-content-center space-y-8">
+    <div className="grid h-full min-w-max w-full rounded-md border-2 border-white p-12 grid-cols-1 place-content-center space-y-8">
       <div>
         <label className="text-white">Correo</label>
         <input
+          value={formik.values.email}
           onChange={handleInputEmail}
           name="email"
           className="rounded-md py-3 pl-2 pr-3 h-18 w-full placeholder:'Correo' placeholder:text-slate-400"
           type="email"
         />
+        <p class="mt-2 text-sm text-red-600 dark:text-red-500">
+          {messageEmail.error}
+        </p>
       </div>
       <div>
         <label className="text-white">Contraseña</label>
         <input
+          value={formik.values.password}
           onChange={handleInputPass}
           name="pass"
           className="rounded-md py-3 pl-2 pr-3 h-18 w-full placeholder:'Contraseña' placeholder:text-slate-400"
           type="password"
         />
+        <p class="mt-2 text-sm text-red-600 dark:text-red-500">
+          {messagePwsd.error}
+        </p>
       </div>
       <div>
         <button
-          onClick={userLogin}
-          className="text-white rounded-md font-bold py-3 pl-2 pr-3 shadow-sm h-19 bg-violet-950 w-full text-center"
-        >
+          type="submit"
+          onClick={formik.handleSubmit}
+          className="text-white rounded-md font-bold py-3 pl-2 pr-3 shadow-sm h-19 bg-violet-950 w-full text-center">
           Iniciar Sesion
         </button>
       </div>
