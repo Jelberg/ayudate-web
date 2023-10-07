@@ -5,12 +5,11 @@ export default function (props) {
   const {bgImage, user} = props;
   return (
     <div
-      className="flex flex-wrap gap-8 place-content-center place-items-center bg-cover bg-center h-screen"
+      className="flex flex-wrap gap-8 place-content-center place-items-center md:bg-contain h-screen p-8"
       style={{
         backgroundImage: `url(${bgImage})`,
       }}>
       <CardProgress progress={user.progress} />
-      <CardLearning />
     </div>
   );
 }

@@ -1,114 +1,74 @@
-import {Tab, initTE} from 'tw-elements';
+import React from 'react';
+import {useState} from 'react';
+import bdVideos from '../../../utils/database/videos.json';
+import Player from './Player';
 
-export default function () {
-  initTE({Tab});
+export default function TabsDefault() {
+  const [videos] = useState(bdVideos);
+  const [currentListVideos, setcurrentListVideos] = useState(
+    videos?.filter(video => video.type === 1),
+  );
+  const [selected, setSelected] = useState(1);
+  const [youtubeID, setyoutubeID] = useState(currentListVideos[0].id);
+
+  const data = [
+    {
+      label: 'MÓDULO I',
+      value: 1,
+      list: videos?.filter(video => video.type === 1),
+    },
+    {
+      label: 'MÓDULO II',
+      value: 2,
+      list: videos?.filter(video => video.type === 2),
+    },
+    {
+      label: 'MÓDULO III',
+      value: 3,
+      list: videos?.filter(video => video.type === 3),
+    },
+    {
+      label: 'MÓDULO IV',
+      value: 4,
+      list: videos?.filter(video => video.type === 4),
+    },
+  ];
+
   return (
-    <div>
-      <ul
-        class="mb-5 flex list-none flex-row flex-wrap border-b-0 pl-0"
-        role="tablist"
-        data-te-nav-ref>
-        <li role="presentation" class="flex-auto text-center">
-          <a
-            href="#tabs-1"
-            class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400"
-            data-te-toggle="pill"
-            data-te-target="#tabs-1"
-            data-te-nav-active
-            role="tab"
-            aria-controls="tabs-1"
-            aria-selected="true">
-            MODULO I
-          </a>
-        </li>
-        <li role="presentation" class="flex-auto text-center">
-          <a
-            href="#tabs-2"
-            class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400"
-            data-te-toggle="pill"
-            data-te-target="#tabs-2"
-            role="tab"
-            aria-controls="tabs-2"
-            aria-selected="false">
-            MODULO II
-          </a>
-        </li>
-        <li role="presentation" class="flex-auto text-center">
-          <a
-            href="#tabs-3"
-            class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[te-nav-active]:border-primary data-[te-nav-active]:text-primary dark:text-neutral-400 dark:hover:bg-transparent dark:data-[te-nav-active]:border-primary-400 dark:data-[te-nav-active]:text-primary-400"
-            data-te-toggle="pill"
-            data-te-target="#tabs-3"
-            role="tab"
-            aria-controls="tabs-3"
-            aria-selected="false">
-            MODULO III
-          </a>
-        </li>
-
-        <li role="presentation" class="flex-auto text-center">
-          <a
-            href="#tabs-4"
-            class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent bg-transparent px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-400 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent dark:text-neutral-600"
-            data-te-toggle="pill"
-            data-te-target="#tabs-4"
-            role="tab"
-            aria-controls="tabs-4"
-            aria-selected="false">
-            MODULO IV
-          </a>
-        </li>
-        <li role="presentation" class="flex-auto text-center">
-          <a
-            href="#tabs-5"
-            class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent bg-transparent px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-400 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent dark:text-neutral-600"
-            data-te-toggle="pill"
-            data-te-target="#tabs-5"
-            role="tab"
-            aria-controls="tabs-5"
-            aria-selected="false">
-            MODULO IV
-          </a>
-        </li>
-      </ul>
-
-      <div class="mb-6">
-        <div
-          class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
-          id="tabs-1"
-          role="tabpanel"
-          aria-labelledby="tabs-home-tab01"
-          data-te-tab-active>
-          Tab 1 content
+    <div className="flex flex-wrap">
+      <div>
+        <Player youtubeID={youtubeID} />
+      </div>
+      <div>
+        <div className="flex flex-row flex-wrap">
+          {data.map(obj => {
+            return (
+              <a
+                onClick={() => {
+                  setSelected(obj.value);
+                  let filter = videos?.filter(
+                    video => video.type === obj.value,
+                  );
+                  setcurrentListVideos(filter);
+                  setyoutubeID(filter[0].id);
+                }}
+                className="rounded-full bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 ml-4 p-3">
+                <label className="font-medium text-slate-50">{obj.label}</label>
+              </a>
+            );
+          })}
         </div>
-        <div
-          class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
-          id="tabs-2"
-          role="tabpanel"
-          aria-labelledby="tabs-profile-tab01">
-          Tab 2 content
-        </div>
-        <div
-          class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
-          id="tabs-3"
-          role="tabpanel"
-          aria-labelledby="tabs-profile-tab01">
-          Tab 3 content
-        </div>
-        <div
-          class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
-          id="tabs-4"
-          role="tabpanel"
-          aria-labelledby="tabs-contact-tab01">
-          Tab 4 content
-        </div>
-
-        <div
-          class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
-          id="tabs-5"
-          role="tabpanel"
-          aria-labelledby="tabs-contact-tab01">
-          Tab 5 content
+        <div>
+          {' '}
+          {currentListVideos.map(obj => (
+            <div
+              onClick={() => {
+                setyoutubeID(obj.id);
+              }}
+              className="w-full p-4 hover:bg-slate-200">
+              <a>{obj.title}</a>
+            </div>
+          ))}
         </div>
       </div>
     </div>
