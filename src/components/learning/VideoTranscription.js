@@ -414,7 +414,7 @@ export default function (props) {
               </p>
             </div>
           );
-        case 3:
+        default:
           return (
             <div className="text-sm">
               <p>

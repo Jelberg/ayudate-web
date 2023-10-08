@@ -6,6 +6,7 @@ import SignUp from '../pages/signUpPage/SignUp.js';
 import Notfound from '../pages/utilsPage/Notfound.js';
 import ModulePage from '../pages/modulesPage/ModulePage.js';
 import LearningPage from '../pages/learningPage/LearningPage.js';
+import TestPage from '../pages/testPage/TestPage.js';
 import {useUserContext} from '../contexts/UserContext.js';
 
 const Routes = () => {
@@ -23,6 +24,7 @@ const Routes = () => {
           <Route path="/signup" component={SignUp} />
           <Route path="/modules" component={ModulePage} />
           <Route path="/learning/:module" component={LearningPage} />
+          <Route path="/test/:module" component={TestPage} />
           <Route component={Notfound} />
         </Switch>
       ) : (
