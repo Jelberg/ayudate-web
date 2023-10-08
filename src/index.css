@@ -23,3 +23,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#ELIA_IFRAME {
+  display: none;
+}

@@ -74,8 +74,7 @@ export default function (props) {
             ))}
             <button
               onClick={goTo}
-              className="bg-purple-700 text-white rounded-2xl p-2 mt-4">
-              {' '}
+              className="bg-purple-700 text-white rounded-2xl p-2 mt-8 mb-24">
               <b>HACER TEST</b>
             </button>
           </div>
