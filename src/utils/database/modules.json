@@ -1,18 +1,22 @@
 [
   {
     "module": 1,
+    "img": "module1.png",
     "link": "https://drive.google.com/file/d/1EXuVNVfpjnTg1rtSPVIq0zX7yUKg6hez/view?usp=drive_link"
   },
   {
     "module": 2,
+    "img": "module2.png",
     "link": "https://drive.google.com/file/d/1rm2xD338iz_X6OJmxgEEnncIkbmh_YwG/view?usp=drive_link"
   },
   {
     "module": 3,
+    "img": "module3.png",
     "link": "https://drive.google.com/file/d/1__TTvcp7kM8R0Q0wXLpknwIiYHfqQ1gK/view?usp=drive_link"
   },
   {
     "module": 4,
+    "img": "module4.png",
     "link": "https://drive.google.com/file/d/1PPrVj9U3iXM9jWpxj_KjUT_jVCt2Jysp/view?usp=drive_link"
   }
 ]

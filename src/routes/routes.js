@@ -1,9 +1,11 @@
-import React, {useEffect} from 'react';
-import {Route, Router, useLocation, Redirect, Switch} from 'wouter';
+import React from 'react';
+import {Route, Router, Switch} from 'wouter';
 import Home from '../pages/homePage/Home.js';
 import Login from '../pages/loginPage/Login.js';
 import SignUp from '../pages/signUpPage/SignUp.js';
 import Notfound from '../pages/utilsPage/Notfound.js';
+import ModulePage from '../pages/modulesPage/ModulePage.js';
+import LearningPage from '../pages/learningPage/LearningPage.js';
 import {useUserContext} from '../contexts/UserContext.js';
 
 const Routes = () => {
@@ -19,6 +21,8 @@ const Routes = () => {
           <Route path="/home" component={Home} />
           <Route path="/login" component={Login} />
           <Route path="/signup" component={SignUp} />
+          <Route path="/modules" component={ModulePage} />
+          <Route path="/learning/:module" component={LearningPage} />
           <Route component={Notfound} />
         </Switch>
       ) : (
