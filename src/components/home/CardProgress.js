@@ -1,8 +1,6 @@
-import {MODULE_NAMES} from '../../utils/constants';
-import EmptyProgress from './EmptyProgress';
+import Progress from './Progress';
 
 export default function (props) {
-  const {progress} = props;
   return (
     <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
       <div className="">
@@ -15,7 +13,7 @@ export default function (props) {
             Este es tu progreso actualmente
           </p>
 
-          {!progress.email ? <EmptyProgress /> : <div></div>}
+          <Progress />
         </div>
       </div>
     </div>

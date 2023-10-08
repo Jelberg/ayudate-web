@@ -8,7 +8,6 @@ export default function () {
   const [, setLocation] = useLocation();
 
   const goTo = location => {
-    console.log(location);
     setLocation('/learning/' + location);
   };
 

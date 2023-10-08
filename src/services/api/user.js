@@ -10,7 +10,6 @@ export async function loginApi(email, password) {
 
     console.log(result);
     if (result.data.email) {
-      //await AsyncStorage.setItem(USER_STORAGE, JSON.stringify(result.data));
       return result;
     } else return [];
   } catch (error) {

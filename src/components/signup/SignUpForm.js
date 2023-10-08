@@ -139,7 +139,7 @@ export default function SignUpForm() {
           className="rounded-md py-3 pl-2 pr-3 h-18 w-full placeholder:text-slate-400"
           type="text"
         />
-        <p class="mt-2 text-sm text-red-600 dark:text-red-500">
+        <p className="mt-2 text-sm text-red-600 dark:text-red-500">
           {messageUser.error}
         </p>
       </div>
@@ -152,7 +152,7 @@ export default function SignUpForm() {
           type="email"
           value={formik.values.email}
         />
-        <p class="mt-2 text-sm text-red-600 dark:text-red-500">
+        <p className="mt-2 text-sm text-red-600 dark:text-red-500">
           {messageEmail.error}
         </p>
       </div>
@@ -185,7 +185,7 @@ export default function SignUpForm() {
           className="rounded-md py-3 pl-2 pr-3 h-18 w-full placeholder:text-slate-400"
           type="password"
         />
-        <p class="mt-2 text-sm text-red-600 dark:text-red-500">
+        <p className="mt-2 text-sm text-red-600 dark:text-red-500">
           {messagePwsd.error}
         </p>
       </div>

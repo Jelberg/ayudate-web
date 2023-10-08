@@ -1,9 +1,6 @@
 export default function (props) {
   const {module, topic} = props;
 
-  console.log(typeof module);
-  console.log(topic);
-
   const transcription = (m, t) => {
     const module = parseInt(m);
     const topic = parseInt(t);

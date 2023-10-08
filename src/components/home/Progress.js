@@ -1,5 +1,14 @@
+import {useUserContext} from '../../contexts/UserContext';
 import {MODULE_NAMES} from '../../utils/constants';
+
 export default function () {
+  const {user} = useUserContext();
+
+  const mod1 = (user.progress.email && user.progress.mod1 + '%') || '0%';
+  const mod2 = (user.progress.email && user.progress.mod2 + '%') || '0%';
+  const mod3 = (user.progress.email && user.progress.mod3 + '%') || '0%';
+  const mod4 = (user.progress.email && user.progress.mod4 + '%') || '0%';
+
   return (
     <div className="flex flex-col justify-center">
       <div className="flex flex-row gap-4 mt-2 justify-center">
@@ -9,9 +18,9 @@ export default function () {
         <div className="w-full bg-gray-200 rounded-full h-7 dark:bg-gray-700 mb-6">
           <div
             className="bg-gradient-to-r from-sky-500 to-indigo-500 h-7 rounded-full"
-            style={{width: '100%'}}></div>
+            style={{width: mod1}}></div>
         </div>
-        <p className="">0%</p>
+        <p className="">{mod1}</p>
       </div>
 
       <div className=" gap-4 flex flex-row mt-2">
@@ -19,9 +28,9 @@ export default function () {
         <div className="w-full bg-gray-200 rounded-full h-7 dark:bg-gray-700 mb-6">
           <div
             className="bg-gradient-to-r from-sky-500 to-indigo-500 h-7 rounded-full"
-            style={{width: '30%'}}></div>
+            style={{width: mod2}}></div>
         </div>
-        <p className="">0%</p>
+        <p className="">{mod2}</p>
       </div>
 
       <div className="gap-4 flex flex-row justify-center  mt-2">
@@ -29,9 +38,9 @@ export default function () {
         <div className="w-full bg-gray-200 rounded-full h-7 dark:bg-gray-700 mb-6">
           <div
             className="bg-gradient-to-r from-sky-500 to-indigo-500 h-7 rounded-full"
-            style={{width: '30%'}}></div>
+            style={{width: mod3}}></div>
         </div>
-        <p className="">0%</p>
+        <p className="">{mod3}</p>
       </div>
 
       <div className="gap-4 flex flex-row justify-center mt-2">
@@ -41,9 +50,9 @@ export default function () {
         <div className=" w-full bg-gray-200 rounded-full h-7 dark:bg-gray-700 mb-6">
           <div
             className="bg-gradient-to-r from-sky-500 to-indigo-500 h-7 rounded-full"
-            style={{width: '30%'}}></div>
+            style={{width: mod4}}></div>
         </div>
-        <p className="">0%</p>
+        <p className="">{mod4}</p>
       </div>
     </div>
   );

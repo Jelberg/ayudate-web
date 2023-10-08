@@ -1,7 +1,15 @@
+import {useLocation} from 'wouter';
+
 export default function (props) {
-  const {totalQuestions, countResult} = props;
+  const {totalQuestions, countResult, module} = props;
   const totalErrors = totalQuestions - countResult;
   const imgPath = process.env.PUBLIC_URL + '/gif/confetti-gradient.gif';
+  const [, setLocation] = useLocation();
+
+  const goTo = location => {
+    setLocation('/' + location);
+  };
+
   return (
     <div className="flex flex-col justify-center">
       <div className="flex flex-row justify-center">
@@ -33,7 +41,11 @@ export default function (props) {
           </p>
         </div>
       </div>
-      <button className="mt-8 rounded-2xl bg-purple-900 p-2 text-white">
+      <button
+        onClick={() => {
+          goTo('learning/' + module);
+        }}
+        className="mt-8 rounded-2xl bg-purple-900 p-2 text-white">
         CONTINUAR
       </button>
     </div>

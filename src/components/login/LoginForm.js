@@ -66,7 +66,6 @@ export default function LoginForm() {
       if (messageEmail.error === '' && messagePwsd.error === '') {
         if (email && password) {
           await loginApi(email, password).then(res => {
-            console.log('holaaa');
             console.log(res.data);
             if (Object.keys(res).length === 0)
               Notification('Usuario o contrasena no existen', 'error');
@@ -105,7 +104,7 @@ export default function LoginForm() {
           className="rounded-md py-3 pl-2 pr-3 h-18 w-full placeholder:'Correo' placeholder:text-slate-400"
           type="email"
         />
-        <p class="mt-2 text-sm text-red-600 dark:text-red-500">
+        <p className="mt-2 text-sm text-red-600 dark:text-red-500">
           {messageEmail.error}
         </p>
       </div>
@@ -118,7 +117,7 @@ export default function LoginForm() {
           className="rounded-md py-3 pl-2 pr-3 h-18 w-full placeholder:'Contraseña' placeholder:text-slate-400"
           type="password"
         />
-        <p class="mt-2 text-sm text-red-600 dark:text-red-500">
+        <p className="mt-2 text-sm text-red-600 dark:text-red-500">
           {messagePwsd.error}
         </p>
       </div>

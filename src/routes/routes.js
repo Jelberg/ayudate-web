@@ -12,8 +12,6 @@ import {useUserContext} from '../contexts/UserContext.js';
 const Routes = () => {
   const {user} = useUserContext();
 
-  console.log(user);
-
   return (
     <Router>
       {user !== '' ? (

@@ -4,6 +4,8 @@ import ResultsTest from './ResultsTest';
 import {getTestByModule} from '../../services/api/test';
 import {ToastContainer} from 'react-toastify';
 import {Notification} from '../notification/Notification';
+import {useUserContext} from '../../contexts/UserContext';
+import {addProgressApi, getProgressUserAPi} from '../../services/api/progress';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
@@ -19,6 +21,7 @@ export default function (props) {
   const [countResult, setCountResult] = useState(0);
   const [option, setOption] = useState(null);
   const [progress, setProgress] = useState('0%');
+  const {user, login} = useUserContext();
 
   function selected(value) {
     return value ? setSuccess(1) : setSuccess(0);
@@ -40,17 +43,20 @@ export default function (props) {
       //Termina el test
       const sum = countResult + success;
       setCountResult(sum);
-      setIsFinished(true);
+      //setIsFinished(true);
 
-      /* await addProgressApi({
-        module: module.toString(),
-        percentage: Math.trunc((sum * 100) / totalQuestions),
-      }).then(async () => {
-        await getProgressUserAPi().then(user => {
-          loginUser(user);
-          setIsEnd(true);
-        });
-      });*/
+      const rest = await addProgressApi(
+        {
+          module: module.toString(),
+          percentage: Math.trunc((sum * 100) / totalQuestions),
+        },
+        user,
+      ).then(async () => {
+        const updtUser = await getProgressUserAPi(user.email);
+        console.log(updtUser);
+        login(updtUser);
+        setIsFinished(true);
+      });
     }
   }
 
@@ -58,12 +64,13 @@ export default function (props) {
     <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl p-8 mt-14 text-center">
       {!isFinished ? (
         <div className="flex flex-col justify-center py-4">
-          <ProgresBarTest progress={progress} />
+          <ProgresBarTest module={module} progress={progress} />
           <p className="text-2xl">
             <b>{test[indexCurrentQuestion].question} </b>
           </p>
           {test[indexCurrentQuestion].options.map(item => (
             <div
+              key={item.id}
               className={classNames(
                 option === item.id
                   ? 'my-4 border-2 border-b-8 border-sky-300 rounded-xl py-2'
@@ -86,6 +93,7 @@ export default function (props) {
         <ResultsTest
           totalQuestions={totalQuestions}
           countResult={countResult}
+          module={module}
         />
       )}
       <ToastContainer />
